@@ -35,7 +35,9 @@ class _HomeScreenState extends State<HomeScreen> {
           child: new Text(
             'QR GENERATOR',
             style: TextStyle(
-              color: Colors.black,
+              color: Colors.red,
+              fontStyle: FontStyle.normal,
+              fontWeight: FontWeight.bold
             ),
             textAlign: TextAlign.center,
           ),
@@ -63,18 +65,17 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             Center(
               child: Container(
-                margin: EdgeInsets.only(top: 10.0),
+                margin: EdgeInsets.only(top: 20.0),
                 width: double.infinity,
                 child: new TextField(
                   controller: _controller,
                   decoration: new InputDecoration(
+                    labelText: 'Text to Generate Bar QR-Code',
                       border: new OutlineInputBorder(
-                        borderRadius: const BorderRadius.all(
-                          const Radius.circular(35.0),
-                        ),
+                        borderRadius: BorderRadius.circular(5.0)
                       ),
                       filled: true,
-                      hintText: "Enter text to generate",
+                      hintText: "Enter text e.g IncubateIndia",
                       fillColor: Colors.white70),
                 ),
               ),
