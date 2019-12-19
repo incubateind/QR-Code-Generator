@@ -1,6 +1,6 @@
-# qrgenerator
+# qr_generator
 
-A new Flutter application.
+A new Flutter project to Create QR Code Generator which performs Generation of QR Code for the given Text entered in the TextField.
 
 ## Getting Started
 
